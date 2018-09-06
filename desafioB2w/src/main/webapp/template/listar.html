@@ -1,0 +1,23 @@
+<h3 class="page-header">Listar Cliente</h3>
+
+<form>
+	<div class="form-group">
+		Nome: 
+		<input type="text" ng-model="nome" class="form-control">
+	</div>
+	<input type="submit" value="BUSCAR" class="btn btn-info"
+		ng-click="buscar()">
+</form>
+<hr>
+<table class="table table-bordered">
+	<tr>
+		<th>NOME</th>
+		<th>IDADE</th>
+		<th>CPF</th>
+	</tr>
+	<tr ng-repeat="cli in lista">
+		<td>{{cli.nome}}</td>
+		<td>{{cli.idade}}</td>
+		<td>{{cli.cpf}}</td>
+	</tr>
+</table>
