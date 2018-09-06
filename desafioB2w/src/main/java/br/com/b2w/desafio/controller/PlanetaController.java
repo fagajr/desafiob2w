@@ -99,5 +99,18 @@ public class PlanetaController {
 			return new ResponseEntity<String>(new Gson().toJson(json), HttpStatus.BAD_REQUEST);
 		}
 	}
-	
+
+	/**
+	 * @return the cd
+	 */
+	public PlanetaDao getCd() {
+		return cd;
+	}
+
+	/**
+	 * @param cd the cd to set
+	 */
+	public void setCd(PlanetaDao cd) {
+		this.cd = cd;
+	}
 }
